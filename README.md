@@ -1,9 +1,13 @@
 # Linux
- Configuration information for Linux servers.
+ Configuration information for Linux VMs.
 
- This folder contains scripts for Linux configuration information. 
+## Manual Setup
+1. Assign a static IPv4 address
+2. Create a DNS entry in dc1-letterkenny1
 
- Full documentation will be in a Gitbook document at
+## Scripts
+This folder contains scripts for Linux configuration information. 
+Full documentation will be in a Gitbook document at **TBD**
 
  - first.sh               What to do first on all servers
  - hardwareinfo.sh        Verify hardware and document
