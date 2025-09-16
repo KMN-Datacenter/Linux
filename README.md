@@ -1,6 +1,8 @@
 # Linux
  Configuration information for Linux VMs.
 
+ This is a public repo and should contain scripts only. No passwords, keys, etc.
+
 ## Manual Setup
 1. Assign a static IPv4 address
 2. Create a DNS entry in dc1-letterkenny1
