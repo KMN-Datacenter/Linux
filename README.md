@@ -1,7 +1,7 @@
 # Linux
  Configuration information for Linux VMs.
 
- This is a public repo and should contain scripts only. No passwords, keys, etc.
+ __This is a public repo and should contain scripts only. No passwords, keys, etc.__
 
 ## Manual Setup
 1. Assign a static IPv4 address
