@@ -11,11 +11,12 @@
 This folder contains scripts for Linux configuration information. 
 Full documentation will be in a Gitbook document at **TBD**
 
+__Run these scripts one line at a time, manually, until they are verified__.
+
  - first.sh               What to do first on all servers
  - hardwareinfo.sh        Verify hardware and document
  - batch_users.sh         Create local admins with sudo
  - directories.sh         Simple script to create user directories etc on first login
- - lldp.sh                Allow LLDP to<->from network for Ubuntu
  - lldp.rpi               Allow LLDP to<->from network for RPi  
  - ufw.sh                 Activate firewall and allow SSH
  - join_domain            Join a domain for non admin users.
