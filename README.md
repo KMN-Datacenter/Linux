@@ -24,3 +24,6 @@ Full documentation will be in a Gitbook document at **TBD**
 ## Admin accounts
 1. Any account in the form *firstnamesurname* is a local admin account and requires a strong password.
 2. You may enable desktop access when the server is being commissioned. Enable through Settings, System, Remote login. **SOP to be written**
+
+## SNMP
+Observium server is at 172.28.12.1
