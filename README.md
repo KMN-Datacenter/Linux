@@ -15,7 +15,8 @@ Full documentation will be in a Gitbook document at **TBD**
  - hardwareinfo.sh        Verify hardware and document
  - batch_users.sh         Create local admins with sudo
  - directories.sh         Simple script to create user directories etc on first login
- - lldp.sh                Allow LLDP to<->from network
+ - lldp.sh                Allow LLDP to<->from network for Ubuntu
+ - lldp.rpi               Allow LLDP to<->from network for RPi  
  - ufw.sh                 Activate firewall and allow SSH
  - join_domain            Join a domain for non admin users.
 
