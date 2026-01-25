@@ -6,7 +6,7 @@
 # Script: first.sh
 
 sudo apt update
-sudo apt-upgrade -y
+sudo apt upgrade -y
 sudo apt install dnsutils -y
 sudo apt install iputils-ping -y
 sudo apt install net-utils -y
