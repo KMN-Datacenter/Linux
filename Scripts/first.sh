@@ -12,12 +12,3 @@ sudo apt install iputils-ping -y
 sudo apt install net-utils -y
 sudo apt install nano -y
 sudo apt get openssh-server -y
-
-
-
-echo 'Installing SNMP, edit conf file before use'
-sudo apt install snmpd snmp libsnmp-dev
-# Backup original
-cp /etc/snmp/snmpd.conf /etc/snmp/snmpd.bak
-# Copy minimalist file
-cp ./snmpd.conf /etc/snmp/snmpd.conf
