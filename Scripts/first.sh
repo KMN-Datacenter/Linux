@@ -13,12 +13,6 @@ sudo apt install net-utils -y
 sudo apt install nano -y
 sudo apt get openssh-server -y
 
-echo 'Installing LLDP, edit conf file before use'
-
-sudo apt-get install -y lldpd
-lldpad -d
-# Copy minimalist file
-cp ./lldpd.conf /etc/lldpd.d/lldp.conf
 
 
 echo 'Installing SNMP, edit conf file before use'
