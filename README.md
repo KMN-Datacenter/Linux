@@ -17,7 +17,7 @@ __Run these scripts one line at a time, manually, until they are verified__.
  - hardwareinfo.sh        Verify hardware and document
  - batch_users.sh         Create local admins with sudo
  - directories.sh         Simple script to create user directories etc on first login
- - lldp.rpi               Allow LLDP to<->from network for RPi  
+ - lldp.rpi/lldp.sh       Allow LLDP to<->from network for RPi or Ubuntu 
  - ufw.sh                 Activate firewall and allow SSH
  - join_domain            Join a domain for non admin users.
 
