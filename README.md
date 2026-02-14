@@ -25,7 +25,9 @@ __Run these scripts one line at a time, manually, until they are verified__.
 
 ## Admin accounts
 1. Any account in the form *firstnamesurname* is a local admin account and requires a strong password.
-2. You may enable desktop access when the server is being commissioned. Enable through Settings, System, Remote login. **SOP to be written**
+2. On systems from 2026 onwards, admin accounts should be in the form *surname_admin*
+3. Create accounts using the *batch_users.sh* script
+4. You may enable desktop access when the server is being commissioned. Enable through Settings, System, Remote login. **SOP to be written**
 
 ## SNMP
 Observium server is at 172.28.12.1
