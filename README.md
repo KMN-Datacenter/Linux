@@ -3,7 +3,10 @@
 
  __This is a public repo and should contain scripts only. No passwords, keys, etc.__
 
-## Manual Setup
+## GNS3 VMs Setup
+These scripts are intended to convert a Linux server VM to a full GNS3 GUI workstation. Examine the scripts and only run what you need. 
+
+## Servers Manual Setup
 1. Assign a static IPv4 address
 2. Create a DNS entry in dc1-letterkenny1
 
