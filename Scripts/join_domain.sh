@@ -101,3 +101,31 @@ sudo resolvectl flush-caches
 # Restart the Active Directory authentication service
 sudo systemctl restart sssd
 
+
+
+
+
+
+
+if still fails then do this :-
+
+
+sudo nano /etc/sssd/sssd.conf
+
+Under this existing section:
+[domain/letterkenny.ads.kmn.ie]
+
+add:
+ad_gpo_access_control = permissive
+
+Do not create a second domain section. Add the line inside the existing one.
+Then apply it:
+
+# SSSD requires secure permissions
+sudo chmod 600 /etc/sssd/sssd.conf
+
+# Validate the configuration
+sudo sssctl config-check
+
+# Restart SSSD
+sudo systemctl restart sssd
