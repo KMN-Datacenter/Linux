@@ -54,5 +54,39 @@ getent passwd 'harman.singh@letterkenny.ads.kmn.ie'
 # Check SSSD
 systemctl status sssd --no-pager
 
+
 # View generated SSSD configuration
 sudo cat /etc/sssd/sssd.conf
+
+
+
+
+
+
+## Configure DNS for Active Directory
+# Active Directory relies on DNS to locate Domain Controllers and services such as Kerberos and LDAP. Configure the Ubuntu server to use the internal Active Directory DNS server.
+
+# Configure DNS for Active Directory
+sudo nano /etc/systemd/resolved.conf
+
+# Add the AD DNS server and domain
+[Resolve]
+DNS=172.28.35.1
+Domains=letterkenny.ads.kmn.ie
+
+# Restart DNS resolver to apply the changes
+sudo systemctl restart systemd-resolved
+
+# Verify DNS configuration
+resolvectl status
+
+# Test Active Directory domain DNS resolution
+nslookup letterkenny.ads.kmn.ie
+
+# Test that LDAP/Domain Controller records can be resolved
+nslookup -type=SRV _ldap._tcp.letterkenny.ads.kmn.ie
+
+# Test that Kerberos authentication records can be resolved
+nslookup -type=SRV _kerberos._tcp.letterkenny.ads.kmn.ie
+
+
