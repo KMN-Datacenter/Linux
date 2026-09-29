@@ -90,3 +90,14 @@ nslookup -type=SRV _ldap._tcp.letterkenny.ads.kmn.ie
 nslookup -type=SRV _kerberos._tcp.letterkenny.ads.kmn.ie
 
 
+
+##If it works intermittently then perform these steps##
+# Restart the DNS resolver
+sudo systemctl restart systemd-resolved
+
+# Clear cached DNS information
+sudo resolvectl flush-caches
+
+# Restart the Active Directory authentication service
+sudo systemctl restart sssd
+
